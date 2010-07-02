@@ -33,8 +33,14 @@ as happens normally).
 
 === Example Template Markup
 
+  <%=javascript_include_tag 'jquery' %>
+  <%=javascript_include_tag 'jquery.cookie' %>
+  <%=javascript_include_tag 'json' %>
+  <%=javascript_include_tag 'flash' %>
+
   <div id="error_div_id" class="flash flash_error"></div>
   <div id="notice_div_id" class="flash flash_notice"></div>
+
   <script type="text/javascript">
     Flash.transferFromCookies();
     Flash.writeDataTo('error', '#error_div_id');
