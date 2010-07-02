@@ -2,7 +2,7 @@
 
 == Installation
 
-script/plugin install git://github.com/leonid-shevtsov/cacheable-flash-jquery.git
+  script/plugin install git://github.com/leonid-shevtsov/cacheable-flash-jquery.git
 
 == Description
 
@@ -26,10 +26,10 @@ as happens normally).
 
 === Example Controller
 
-class MyController < ActionController::Base
-  include CacheableFlash
-  # ...
-end
+  class MyController < ActionController::Base
+    include CacheableFlash
+    # ...
+  end
 
 === Example Template Markup
 
@@ -37,8 +37,8 @@ end
   <div id="notice_div_id" class="flash flash_notice"></div>
   <script type="text/javascript">
     Flash.transferFromCookies();
-    Flash.writeDataTo('error', $('error_div_id'));
-    Flash.writeDataTo('notice', $('notice_div_id'));
+    Flash.writeDataTo('error', '#error_div_id');
+    Flash.writeDataTo('notice', '#notice_div_id');
   </script>
 
 == Testing
