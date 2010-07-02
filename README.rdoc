@@ -1,5 +1,4 @@
-CacheableFlash for jQuery
-=========================
+= CacheableFlash for jQuery
 
 == Installation
 
