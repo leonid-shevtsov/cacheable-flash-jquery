@@ -90,7 +90,9 @@ Cacheable Flash provides test helpers which includes the flash_cookie method.
 
 == Copyright
 MIT License
+
 Copyright (c) 2010 Leonid Shevtsov
+
 Copyright (c) 2007 Pivotal Labs
 
 Permission is hereby granted, free of charge, to any person
