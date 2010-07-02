@@ -3,17 +3,18 @@ var Flash = new Object();
 Flash.data = {};
 
 Flash.transferFromCookies = function() {
-  var data = JSON.parse(unescape(Cookie.get("flash")));
+  var data = JSON.parse(unescape($.cookie("flash")));
   if(!data) data = {};
   Flash.data = data;
-  Cookie.erase("flash");
+  $.cookie('flash',null, {path: '/'});
 };
 
 Flash.writeDataTo = function(name, element) {
   element = $(element);
   var content = "";
-  if(Flash.data[name]) {
-    content = Flash.data[name].toString().gsub(/\+/, ' ');
+  if (Flash.data[name]) {
+    message = Flash.data[name].toString().gsub(/\+/, ' ');
+    element.html(message);
+    element.show();
   }
-  element.innerHTML = unescape(content);
 };

@@ -1,3 +1,10 @@
+1.0.1
+
+- Rewritten by Leonid Shevtsov to support jQuery
+i- TODO: fix specs
+
+----
+
 - Implicitly adding js files to Rails include defaults (Patch from Michael Erb)
 
 0.1.5
