@@ -1,5 +1,7 @@
 = CacheableFlash for jQuery
 
+<b>This project is now superseded by [unobtrusive_flash](https://github.com/leonid-shevtsov/unobtrusive_flash).</b>
+
 == Installation
 
   script/plugin install git://github.com/leonid-shevtsov/cacheable-flash-jquery.git
